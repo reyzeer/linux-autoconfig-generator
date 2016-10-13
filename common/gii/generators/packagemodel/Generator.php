@@ -11,12 +11,22 @@ namespace common\gii\generators\packagemodel;
 class Generator extends \yii\gii\Generator
 {
 
+    public $asd;
+
     /**
      * @inheritdoc
      */
     public function getName()
     {
         return 'Package model generator';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getDescription()
+    {
+        return 'This generator generates an ActiveRecord class, specfic object and search class class for the specified database table. ';
     }
 
     /**
